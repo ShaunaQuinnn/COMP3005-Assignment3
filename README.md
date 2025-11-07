@@ -1,0 +1,50 @@
+A README already exists within the java folder  (path : StudentManagementSystem/src/main/java)
+
+For easy access: 
+
+Steps to setup:
+1.
+In pgAdmin4, right click Database on the left hand side explorer and click 'create'.
+Name this Database Assignment3. This is important because in our DatabaseConnection file we declared the url as < String url = "jdbc:postgresql://localhost:5432/Assignment3";> .
+If you would like to name the database something else just change <Assignment3> in that url to your specified name.
+
+Next, right click your <Assignment3> database and click querytool.
+From there, press the open file icon and naviagte to where you saved the A3_DB_setup.sql file and open it.
+Run this file. it will create your table and fill it.
+There are lines in this file that are commented out, they do serve certain purposes but are not required for the db to fucntion; read their explanations if you are interested in including them.
+
+
+
+2. Open intelliJ, naviagte to the upper right hand main menu, select open
+navigate to the project <StudentManagementSystem> - wherever you saved it and open it :
+
+
+3. Next, update the following lines in DatabaseConnection.java :
+lines 9 & 10 :
+String username - change the value to your postgres username
+String password - change the value to your postgres password
+
+if you named your database something else in step 1 : -->
+line 8 :  String url = "jdbc:postgresql://localhost:5432/Assignment3";
+change the <Assignemnt3> segment to what you named your database
+
+
+
+4. Run the application
+select the applicationOperations file
+to run the application either
+- in the upper right hand corner of the window press the trinagle to run the application
+
+OR
+
+- right click applicationoperations.java file and select <Run applicationOperations.main()>
+
+and the program will perform the operations on the table - we can see this in the output in intellij
+
+
+Here is the link(s) to my TUTORIAL video(s):
+Video 1:
+https://youtube.com/shorts/L8IXB3B_mwM?feature=share
+
+Video 2:
+https://youtu.be/qSqOVks-5NY
